@@ -13,7 +13,8 @@ database backend and ```psub```s to the ```feed.*``` channel.
 ## To Do:
 
 - [ ] Provide Screenshots
-- [ ] Add a Time field to the ```Message``` class
+- [x] Add a Time field to the ```Message``` class
 - [ ] Unit Tests
 - [ ] Improved theme
 - [ ] Fix or remove Back arrow button
+- [x] Word Wrap the message

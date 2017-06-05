@@ -20,10 +20,11 @@ class FeedScreenState extends State<FeedScreen> with TickerProviderStateMixin {
 
   RedisTopics _topics;
 
-  void _handleSubmitted(String title, String text) {
+  void _handleSubmitted(String title, String text, DateTime time) {
     FeedMessage message = new FeedMessage(
       title: title,
       text: text,
+      creationTime: time,
       animationController: new AnimationController(
         duration: new Duration(milliseconds: 700),
         vsync: this,
@@ -46,7 +47,8 @@ class FeedScreenState extends State<FeedScreen> with TickerProviderStateMixin {
 
   void initState() {
     super.initState();
-    Function onMessage = (Message m) => _handleSubmitted(m.topic, m.body);
+    Function onMessage =
+        (Message m) => _handleSubmitted(m.topic, m.body, m.timeStamp);
 
     _topics = new RedisTopics(widget.configuration.serverName,
         widget.configuration.portNum, onMessage);

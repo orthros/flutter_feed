@@ -41,7 +41,7 @@ class RedisTopics {
 
           print("Message: $mess on topic $topic on channel: $wildCardChannel ");
 
-          Message msg = new Message(topic, mess);
+          Message msg = new Message(topic, mess, new DateTime.now());
           _onUpdated(msg);
         }
       });

@@ -4,6 +4,7 @@ A simple flutter application to be a "news ticker" for
 events. To accomplish this, it uses a [Redis](https://redis.io/)
 database backend and ```psub```s to the ```feed.*``` channel. 
 
+![Its just a feed!](example.png)
 
 ## Requirements
  * Redis Server avilable on the network

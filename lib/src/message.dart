@@ -1,9 +1,12 @@
 class Message {
   ///The Body of the message
-  String body;
+  final String body;
 
   ///The Topic of the message
-  String topic;
+  final String topic;
 
-  Message(this.topic, this.body);
+  ///The time the message was created
+  final DateTime timeStamp;
+
+  const Message(this.topic, this.body, this.timeStamp);
 }

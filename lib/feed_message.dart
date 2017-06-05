@@ -35,7 +35,8 @@ class FeedMessage extends StatelessWidget {
                 child:
                     new CircleAvatar(child: new Text(title[0].toUpperCase())),
               ),
-              new Column(
+              new Expanded(
+                  child: new Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   new Row(
@@ -59,7 +60,7 @@ class FeedMessage extends StatelessWidget {
                     child: new Text(text, softWrap: true),
                   ),
                 ],
-              ),
+              )),
             ],
           ),
         ));

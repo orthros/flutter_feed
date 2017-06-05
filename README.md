@@ -1,8 +1,19 @@
 # flutter_feed
 
-A new flutter project.
+A simple flutter application to be a "news ticker" for
+events. To accomplish this, it uses a [Redis](https://redis.io/)
+database backend and ```psub```s to the ```feed.*``` channel. 
 
-## Getting Started
 
-For help getting started with Flutter, view our online
-[documentation](http://flutter.io/).
+## Requirements
+ * Redis Server avilable on the network
+ * [Flutter](http://flutter.io)
+ * [Dart](https://www.dartlang.org/)
+
+## To Do:
+
+- [ ] Provide Screenshots
+- [ ] Add a Time field to the ```Message``` class
+- [ ] Unit Tests
+- [ ] Improved theme
+- [ ] Fix or remove Back arrow button

@@ -41,17 +41,22 @@ class FeedMessage extends StatelessWidget {
                   new Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
-                        new Text(title,
-                            style: Theme.of(context).textTheme.subhead),
-                        new Text(
-                            new intl.DateFormat.yMd()
-                                .add_Hms()
-                                .format(creationTime),
-                            style: Theme.of(context).textTheme.subhead)
+                        new Container(
+                            margin: const EdgeInsets.only(right: 5.0),
+                            child: new Text(title,
+                                style: Theme.of(context).textTheme.subhead)),
+                        new Container(
+                            margin:
+                                const EdgeInsets.only(left: 10.0, right: 5.0),
+                            child: new Text(
+                                new intl.DateFormat.yMd()
+                                    .add_Hms()
+                                    .format(creationTime),
+                                style: Theme.of(context).textTheme.caption)),
                       ]),
                   new Container(
                     margin: const EdgeInsets.only(top: 5.0),
-                    child: new Text(text),
+                    child: new Text(text, softWrap: true),
                   ),
                 ],
               ),

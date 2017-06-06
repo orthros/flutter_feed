@@ -22,7 +22,7 @@ class FeedHomeState extends State<FeedHome> {
     if (widget.updater != null) {
       widget.updater(widget.configuration
           .copyWith(serverName: _serverName, portNum: _portNumber));
-      Navigator.popAndPushNamed(context, "/feed");
+      Navigator.pushNamed(context, "/feed");
     }
   }
 

@@ -17,5 +17,5 @@ database backend and ```psub```s to the ```feed.*``` channel.
 - [x] Add a Time field to the ```Message``` class
 - [ ] Unit Tests
 - [ ] Improved theme
-- [ ] Fix or remove Back arrow button
+- [x] Fix or remove Back arrow button
 - [x] Word Wrap the message
